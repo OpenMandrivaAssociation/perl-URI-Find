@@ -1,7 +1,7 @@
 %define realname URI-Find
 %define name perl-%{realname}
 %define version 0.16
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary:	Find URIs in arbitrary text
 Name:		%{name}
@@ -10,7 +10,7 @@ Release:	%{release}
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{realname}/
-Source:		/%{realname}-%{version}.tar.bz2
+Source:		%{realname}-%{version}.tar.bz2
 BuildRequires:	perl-devel
 BuildRequires:  perl(URI)
 BuildArch:	noarch

@@ -14,6 +14,7 @@ Source:		%{realname}-%{version}.tar.bz2
 BuildRequires:	perl-devel
 BuildRequires:  perl(URI)
 BuildArch:	noarch
+Buildroot:	%{_tmppath}/%{name}-root
 
 %description
 This module does one thing: Finds URIs and URLs in plain text.

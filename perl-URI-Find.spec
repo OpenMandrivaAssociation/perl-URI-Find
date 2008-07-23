@@ -1,7 +1,7 @@
 %define realname URI-Find
 %define name perl-%{realname}
 %define version 0.16
-%define release %mkrel 3
+%define release %mkrel 5
 
 Summary:	Find URIs in arbitrary text
 Name:		%{name}

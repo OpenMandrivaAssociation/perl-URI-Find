@@ -12,6 +12,7 @@ URL:		http://search.cpan.org/dist/%{upstream_name}/
 Source:     http://search.cpan.org/CPAN/authors/id/M/MS/MSCHWERN/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(URI)
+BuildRequires:  perl(Test::More) > 0.82
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
 

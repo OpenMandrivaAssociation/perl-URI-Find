@@ -1,5 +1,5 @@
 %define upstream_name    URI-Find
-%define upstream_version 20090319
+%define upstream_version 20100211
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}

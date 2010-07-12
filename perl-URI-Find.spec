@@ -1,5 +1,5 @@
 %define upstream_name    URI-Find
-%define upstream_version 20100211
+%define upstream_version 20100505
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -44,5 +44,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc Changes
 %{perl_vendorlib}/URI/*
+%{_bindir}/urifind
 %{_mandir}/*/*
-

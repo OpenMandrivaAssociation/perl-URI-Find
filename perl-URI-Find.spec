@@ -8,7 +8,7 @@ Release:	4
 Summary:	Find URIs in arbitrary text
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{upstream_name}/
+URL:		https://search.cpan.org/dist/%{upstream_name}/
 Source:		http://search.cpan.org/CPAN/authors/id/M/MS/MSCHWERN/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel

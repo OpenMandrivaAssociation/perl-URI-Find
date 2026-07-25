@@ -1,15 +1,15 @@
 %define upstream_name    URI-Find
-%define upstream_version 20100505
+%define upstream_version 20160806
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Find URIs in arbitrary text
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}/
-Source:		http://search.cpan.org/CPAN/authors/id/M/MS/MSCHWERN/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		https://github.com/schwern/URI-Find
+Source:		https://cpan.metacpan.org/authors/id/M/MS/MSCHWERN/URI-Find-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(URI)

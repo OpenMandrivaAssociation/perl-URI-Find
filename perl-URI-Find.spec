@@ -1,15 +1,13 @@
 %define upstream_name    URI-Find
-%define upstream_version 20160806
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	20160806
+Release:	2
 
 Summary:	Find URIs in arbitrary text
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:		https://github.com/schwern/URI-Find
-Source:		https://cpan.metacpan.org/authors/id/M/MS/MSCHWERN/URI-Find-%{upstream_version}.tar.gz
+Source:		https://cpan.metacpan.org/authors/id/M/MS/MSCHWERN/URI-Find-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(URI)
@@ -25,7 +23,7 @@ considers a URI to be.) It only finds URIs which include a scheme
 a look at URI::Find::Schemeless.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL installdirs=vendor destdir=%{buildroot}
@@ -56,9 +54,7 @@ perl Build.PL installdirs=vendor destdir=%{buildroot}
 + Revision: 395186
 - adding missing buildrequires:
 - update to 20090319
-- using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.16-5mdv2009.0
+- using %20160806 Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.16-5mdv2009.0
 + Revision: 242140
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request

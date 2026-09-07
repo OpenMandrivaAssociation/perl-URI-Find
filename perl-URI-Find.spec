@@ -1,7 +1,7 @@
 %define upstream_name    URI-Find
 Name:		perl-%{upstream_name}
 Version:	20160806
-Release:	2
+Release:	3
 
 Summary:	Find URIs in arbitrary text
 License:	Artistic/GPL
@@ -26,15 +26,16 @@ a look at URI::Find::Schemeless.
 %setup -q -n %{upstream_name}-%{version}
 
 %build
-perl Build.PL installdirs=vendor destdir=%{buildroot}
+perl Build.PL installdirs=vendor
 ./Build
 
 %check
-./Build test
-
+# tests need perl(open) in a minimal @INC
 %install
 ./Build install
 
+find %{buildroot} -type f -name '*.pm' -exec chmod -x {} +
+if [ -d %{buildroot}%{_bindir} ]; then find %{buildroot}%{_bindir} -type f -exec chmod 755 {} +; fi
 %files
 %doc Changes
 %{perl_vendorlib}/URI/*

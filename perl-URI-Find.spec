@@ -1,7 +1,7 @@
 %define upstream_name    URI-Find
 Name:		perl-%{upstream_name}
 Version:	20160806
-Release:	3
+Release:	1
 
 Summary:	Find URIs in arbitrary text
 License:	Artistic/GPL

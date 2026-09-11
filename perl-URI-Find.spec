@@ -26,13 +26,13 @@ a look at URI::Find::Schemeless.
 %setup -q -n %{upstream_name}-%{version}
 
 %build
-perl Build.PL installdirs=vendor
+perl Build.PL --installdirs=vendor
 ./Build
 
 %check
 # tests need perl(open) in a minimal @INC
 %install
-./Build install
+./Build install --destdir=%{buildroot}
 
 find %{buildroot} -type f -name '*.pm' -exec chmod -x {} +
 if [ -d %{buildroot}%{_bindir} ]; then find %{buildroot}%{_bindir} -type f -exec chmod 755 {} +; fi
